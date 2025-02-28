@@ -1,3 +1,5 @@
+import '@/app/ui/global.css'
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        
+        {children}
+        <footer
+         className='py-10 flex justify-center items-center'>Hecho con ❤ por Francisco Yuster</footer></body>
     </html>
   );
 }
